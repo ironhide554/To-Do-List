@@ -24,7 +24,7 @@
 .to-do {
     width: 100%;
     max-width: 540px;
-    background: #fff;
+    background: #040850;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 20px;
@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    color: rgb(15, 14, 14);
+    color: rgb(255, 255, 255);
 }
 
 .to-do h2 img {
@@ -49,7 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(205, 243, 239);
+    background-color: rgb(0, 0, 0);
     border-radius: 35px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -63,6 +63,7 @@ input {
     background: transparent;
     padding: 10px;
     font-weight: 15px;
+    color: white;
 }
 
 button {
@@ -84,7 +85,7 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
-    color: rgb(0, 0, 0);
+    color: rgb(250, 249, 249);
 }
 
 ul li::before {
@@ -102,7 +103,7 @@ ul li::before {
 }
 
 ul li.checked {
-    color: rgb(14, 14, 62);
+    color: rgb(160, 160, 239);
     text-decoration: line-through;
 
 
@@ -110,5 +111,24 @@ ul li.checked {
 
 ul li.checked::before {
     background-image: url("Image/checked.png");
+
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: rgb(69, 135, 163);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    
+
+}
+ul li span:hover{
+    background: #edee;
 
 }
