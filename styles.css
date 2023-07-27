@@ -1,10 +1,8 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +10,7 @@
 
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
     background-image: url("Image/bg.jpg");
@@ -23,31 +21,31 @@
 
 }
 
-.to-do{
+.to-do {
     width: 100%;
-    max-width: 500px;
-    background-color: black;
+    max-width: 540px;
+    background: #fff;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 20px;
-    
+
 
 }
 
-.to-do h2{
-    
+.to-do h2 {
+
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(15, 14, 14);
 }
 
-.to-do h2 img{
+.to-do h2 img {
     width: 75px;
     margin-left: 15px;
 }
 
-.input{
+.input {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,24 +56,59 @@
 
 }
 
-input{
+input {
     flex: 1;
     border: none;
     outline: none;
     background: transparent;
     padding: 10px;
-    
     font-weight: 15px;
 }
 
-button{
-    padding: 10px 45px;
+button {
+    padding: 16px 50px;
     background-color: rgb(28, 172, 136);
-    color: black;
+    color: rgb(4, 3, 3);
     font-size: 15px;
     cursor: pointer;
-    border-radius: 35px;
+    border-radius: 40px;
     border: none;
     outline: none;
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+ul li::before {
+    background-image: url("Image/unchecked.png");
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+ul li.checked {
+    color: rgb(14, 14, 62);
+    text-decoration: line-through;
+
+
+}
+
+ul li.checked::before {
+    background-image: url("Image/checked.png");
 
 }
